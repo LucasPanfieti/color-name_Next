@@ -1,0 +1,45 @@
+.flex {
+  display: flex;
+  gap: 8px;
+}
+
+.marcado {
+  text-decoration: line-through;
+  opacity: 50;
+  color: gray;
+}
+
+body {
+  /* color: rgb(255, 255, 255); */
+  background-color: rgb(34, 34, 34);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+button:hover {
+  background-color: #00a775;
+  color: white;
+}
+
+button {
+  background-color: #00ffaa;
+  color: rgb(27, 27, 27);
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.botao {
+  color: #222222;
+  height: 40px;
+  font-size: 18px;
+  background-color: #00ffaa;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background-color: #00a775;
+  color: white;
+}
