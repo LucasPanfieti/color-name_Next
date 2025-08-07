@@ -33,7 +33,7 @@ export default function desafioNome() {
           maxWidth: "100%",
           backgroundColor: "#535353ff",
           borderRadius: "8px",
-          padding: "1rem",
+          // padding: "1rem",
           boxShadow: "0 0 5px #00ffb3ff",
           display: "flex",
           flexDirection: "column",
@@ -43,11 +43,13 @@ export default function desafioNome() {
         <>
           <h2>Digite seu nome: </h2>
           <div className="flex">
-            <Input
-              newValue={setTempName}
-              type="text"
-              placeholder="Digite seu nome"
-            />
+            <div>
+              <Input
+                newValue={setTempName}
+                type="text"
+                placeholder="Digite seu nome"
+              />
+            </div>
             <Button handleClick={handleClick} />
           </div>
           <h2>Escolha a cor do seu nome: </h2>

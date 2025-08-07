@@ -2,6 +2,7 @@ export default function Input(props) {
   return (
     <>
       <input
+        style={props.style}
         id={props.id}
         name={props.id}
         type={props.type}
