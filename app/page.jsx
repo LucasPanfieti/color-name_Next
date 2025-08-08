@@ -23,43 +23,74 @@ export default function desafioNome() {
       style={{
         display: "flex",
         justifyContent: "center",
-        padding: "1rem",
+        alignItems: "center",
+        gap: "16px",
+        flexDirection: "column",
+
+        paddingTop: "1rem",
+        paddingRight: "1rem",
+        paddingBottom: "1rem",
+        paddingLeft: "1rem",
       }}
     >
       <div
         style={{
-          // width: "80%",
-          minWidth: "50%",
-          maxWidth: "100%",
+          width: "90%",
+          maxWidth: "400px",
+          // minWidth: "50%",
+          // maxWidth: "400px",
           backgroundColor: "#535353ff",
-          borderRadius: "8px",
-          padding: "1rem",
+          borderRadius: "16px",
+
           boxShadow: "0 0 5px #00ffb3ff",
           display: "flex",
           flexDirection: "column",
           gap: "8px",
+
+          paddingTop: "0 rem",
+          paddingRight: "1rem",
+          paddingBottom: "1rem",
+          paddingLeft: "1rem",
         }}
       >
-        <>
-          <h2>Digite seu nome: </h2>
-          <div className="flex">
-            <Input
-              newValue={setTempName}
-              type="text"
-              placeholder="Digite seu nome"
-            />
-            <Button handleClick={handleClick} />
-          </div>
-          <h2>Escolha a cor do seu nome: </h2>
-          <div className="flex">
-            <Input newValue={setColor} type="color" placeholder="" />
-            {/* <Button
+        <h2>Digite seu nome: </h2>
+        <div className="flex">
+          <Input
+            newValue={setTempName}
+            type="text"
+            placeholder="Digite seu nome"
+          />
+          <Button handleClick={handleClick} />
+        </div>
+        <h2>Escolha a cor do seu nome: </h2>
+        <div className="flex">
+          <Input newValue={setColor} type="color" placeholder="" />
+          {/* <Button
                     handleClick={handleClick}
                 /> */}
-          </div>
+        </div>
+      </div>
 
-          <Result nome={name} color={color} />
-        </>
+      <div
+        style={{
+          width: "90%",
+          maxWidth: "400px",
+          // minWidth: "50%",
+          // maxWidth: "400px",
+          backgroundColor: "#535353ff",
+          borderRadius: "16px",
+          boxShadow: "0 0 5px #00ffb3ff",
+          display: "flex",
+          flexDirection: "column",
+          gap: "8px",
+
+          paddingTop: "0 rem",
+          paddingRight: "1rem",
+          paddingBottom: "0.2rem",
+          paddingLeft: "1rem",
+        }}
+      >
+        <Result nome={name} color={color} />
       </div>
     </div>
   );
