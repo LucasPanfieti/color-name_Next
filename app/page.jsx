@@ -1,6 +1,7 @@
 "use client";
 
 import Input from "../components/DesafioAnna/Input";
+import Input2 from "../components/DesafioAnna/Input2";
 import Button from "../components/DesafioAnna/Button";
 import Result from "../components/DesafioAnna/Result";
 import "./desafioNome/style.css";
@@ -55,7 +56,7 @@ export default function desafioNome() {
       >
         <h2>Digite seu nome: </h2>
         <div className="flex">
-          <Input
+          <Input2
             newValue={setTempName}
             type="text"
             placeholder="Digite seu nome"
